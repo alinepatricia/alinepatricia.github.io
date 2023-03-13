@@ -1,0 +1,35 @@
+body {
+    background-color: #ebcbc3;
+    color: #59422a;
+}
+
+
+.menu {
+    list-style: none;
+    display: inline-block;
+    padding: 1px 0px;
+    margin: 5px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+}
+
+.bar_top {
+    display:flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    counter-reset: item 0;
+    z-index: 12;
+    color: #59422a;
+}
+
+.nav_top {
+    background-color: #ebcbc3;
+}
