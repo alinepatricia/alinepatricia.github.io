@@ -1,9 +1,62 @@
-body {
-    background-color: #ebcbc3;
-    color: #59422a;
+
+
+    body {
+        margin: 0;
+        padding: 0;
+      }
+      .secao {
+        position: relative;
+      }
+    
+    #secao-01 {
+        background-color: #EDE9D5;
     }
 
-    nav ul ul {
+    #secao-02 {
+        background-color: #E7AB9A;
+    }
+
+    #secao-03 {
+        background-color: #DF7857;
+    }
+
+    #secao-04 {
+        background-color: #617143;
+    }
+
+    .icone-scroll {
+        position: absolute;
+        bottom: 3em;
+        width: 50px;
+        height: 50px;
+        background-color: #1a1a1a;
+        border-radius: 50%;
+        left: 50%;
+        margin-left: -25px;
+        cursor: pointer;
+      }
+      .scroll {
+        width: 15px;
+        height: 15px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
+        position: relative;
+      }
+      .scroll-next {
+        transform: rotate(45deg);
+        margin: 14px 0 0 16.5px;
+      }
+      .scroll-top {
+        transform: rotate(225deg);
+        margin: 19px 0 0 17px;
+      }
+      .scroll-top + .scroll-top {
+        top: -15px;
+        margin-top: 0;
+      }
+
+      nav ul ul {
         display: none;
     }
     nav ul li:hover > ul {
@@ -12,6 +65,7 @@ body {
     nav{
         margin: 0 auto;
         text-align: center;
+        background-color: #EDE9D5;
     }
     
 .menu ul {
@@ -21,13 +75,13 @@ body {
 	background: -webkit-linear-gradient(top, #efefef 0%,#EDE9D5 100%); 
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
     margin: auto;
-	padding: 0 10px;
+	padding:0 20px 0 20px;
 	border-radius: 15px;  
 	list-style: none;
 	position: relative;
     display: inline-block;
-    text-align: center;
-    width: 60%;
+    line:height;
+    width: 40%;
 }
 
 .menu ul:after {
@@ -49,6 +103,10 @@ body {
         }
     
     .menu ul li a {
-        display: block; padding: 15px 20px;
+        display: block; padding: 15px 30px;
         color: #757575; text-decoration: none;
+    }
+
+    .logo {
+        text-align: right;
     }
