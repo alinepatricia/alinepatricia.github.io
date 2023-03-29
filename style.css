@@ -134,7 +134,7 @@
         align-items: center;
     }
 
-    .profile .profile_details img{
+    .profile .profile_details img {
         height: 45px;
         width: 45px;
         object-fit: cover;
