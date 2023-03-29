@@ -1,15 +1,178 @@
-
-
-    body {
+    *{
         margin: 0;
         padding: 0;
-      }
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+ 
+    body {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 240px;
+        padding: 6px 14px;
+        float: left;
+        background: #11101d;
+    }
+
+    .nav_list{
+        margin-top: 15px;
+    }
+
+    .sidebar .logo_content .logo{
+        color: #fff;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo_content .logo{
+        font-size: 28px;
+        margin-right: 5px;
+    }
+
+    .logo_content .logo .logo_name{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .sidebar #btn{
+        position: absolute;
+        color: #fff;
+        left: 90%;
+        top: 6px;
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+
+    .sidebar ul{
+        margin-top: 20px;
+    }
+
+    .sidebar ul li{
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin: 0px;
+        list-style: none;
+        line-height: 50px;
+        border-radius: 12px;
+    }
+
+    .sidebar ul li input{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        background: #1d1b31;
+        padding-left: 50px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .sidebar ul li .bx-search-alt{
+        position: absolute;
+        z-index: 99;
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .sidebar ul li a{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.4s ease;
+    }
+
+    .sidebar ul li a:hover{
+        color: #11101d;
+        background: #fff;
+    }
+
+    .sidebar ul li a i{
+        height: 50px;
+        min-width: 50px;
+        border-radius: 12px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .sidebar .profile_content{
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .sidebar .profile_content .profile{
+        position: relative;
+        padding: 10px 6px;
+        height: 60px;
+    }
+
+    .profile_content .profile .profile_details{
+        display: flex;
+        align-items: center;
+    }
+
+    .profile .profile_details img{
+        height: 45px;
+        width: 45px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+
+    .profile .profile_details .name_job{
+        margin-left: 10px;
+    }
+
+    .profile .profile_details .name{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .profile .profile_details .job{
+        font-size: 12px;
+    }
+
+    .profile #log-out{
+        position: absolute;
+        left: 88%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        min-width: 50%;
+        line-height: 50px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+
       .secao {
         position: relative;
       }
     
     #secao-01 {
         background-color: #EDE9D5;
+        background-image: C:\Users\bruno\Documents\ProjetoPessoal\background-image.jpg;
     }
 
     #secao-02 {
@@ -67,46 +230,34 @@
         text-align: center;
         background-color: #EDE9D5;
     }
+ 
+
+    #title-01-secao-01 {
+        font-family:Marker Felt, fantasy, 'Courier New', Courier, monospace;
+        font-size:xx-large;
+        font-style: italic;
+        position:absolute;
+        top: 50%;
+        left:60%;
+        transform: translate(-50%, -60%);
+    }
+
+    #title-02-secao-01 {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: larger;
+        position:absolute;
+        top: 50%;
+        left:60%;
+        transform: translate(-50%, -60%);
+    }
+
+    #title-03-secao-01 {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: larger;
+        position:absolute;
+        top: 50%;
+        left:60%;
+        transform: translate(-50%, -60%);
+    }
+
     
-.menu ul {
-    background: #EDE9D5;
-    background: linear-gradient(top, #EDE9D5 0%, #EDE9D5 100%);  
-	background: -moz-linear-gradient(top, #EDE9D5 0%, #EDE9D5 100%); 
-	background: -webkit-linear-gradient(top, #efefef 0%,#EDE9D5 100%); 
-	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-    margin: auto;
-	padding:0 20px 0 20px;
-	border-radius: 15px;  
-	list-style: none;
-	position: relative;
-    display: inline-block;
-    line:height;
-    width: 40%;
-}
-
-.menu ul:after {
-    content: ""; clear: both; display: block;
-}
-
-
-.menu ul li {
-    float:left;
-}
-    nav ul li:hover {
-        background: #4b545f;
-        background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-        background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-        background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-    }
-        .menu ul li:hover a {
-            color: #fff;
-        }
-    
-    .menu ul li a {
-        display: block; padding: 15px 30px;
-        color: #757575; text-decoration: none;
-    }
-
-    .logo {
-        text-align: right;
-    }
