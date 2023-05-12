@@ -1,4 +1,4 @@
-    var _AlturaDocumento = $(window).height(); //pega altura da janela
+var _AlturaDocumento = $(window).height(); //pega altura da janela
 
   function AlturaSecao() {
     $('.secao').height(_AlturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
@@ -16,6 +16,10 @@
     } else if ($(this).parent('.secao').is('#secao-03')) {
       //verifica se está na terceira seção e rola para a quarta
       body.animate({scrollTop: _AlturaDocumento*3}, '500');
+    }else if ($(this).parent('.secao').is('#secao-04')) {
+      //verifica se está na terceira seção e rola para a quarta
+      body.animate({scrollTop: _AlturaDocumento*4}, '500');
+    
     } else {
       //rola para o início da página
       body.animate({scrollTop: 0}, '800');

@@ -1,263 +1,283 @@
     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
- 
-    body {
-        position: relative;
-        min-height: 100vh;
-        width: 100%;
-        overflow: hidden;
-    }
-
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 240px;
-        padding: 6px 14px;
-        float: left;
-        background: #11101d;
-    }
-
-    .nav_list{
-        margin-top: 15px;
-    }
-
-    .sidebar .logo_content .logo{
-        color: #fff;
-        display: flex;
-        height: 50px;
-        width: 100%;
-        align-items: center;
-    }
-
-    .logo_content .logo{
-        font-size: 28px;
-        margin-right: 5px;
-    }
-
-    .logo_content .logo .logo_name{
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    .sidebar #btn{
-        position: absolute;
-        color: #fff;
-        left: 90%;
-        top: 6px;
-        font-size: 20px;
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        transform: translateX(-50%);
-    }
-
-    .sidebar ul{
-        margin-top: 20px;
-    }
-
-    .sidebar ul li{
-        position: relative;
-        height: 50px;
-        width: 100%;
-        margin: 0px;
-        list-style: none;
-        line-height: 50px;
-        border-radius: 12px;
-    }
-
-    .sidebar ul li input{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 12px;
-        outline: none;
-        border: none;
-        background: #1d1b31;
-        padding-left: 50px;
-        font-size: 18px;
-        color: #fff;
-    }
-
-    .sidebar ul li .bx-search-alt{
-        position: absolute;
-        z-index: 99;
-        color: #fff;
-        font-size: 22px;
-    }
-
-    .sidebar ul li a{
-        color: #fff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
-    }
-
-    .sidebar ul li a:hover{
-        color: #11101d;
-        background: #fff;
-    }
-
-    .sidebar ul li a i{
-        height: 50px;
-        min-width: 50px;
-        border-radius: 12px;
-        line-height: 50px;
-        text-align: center;
-    }
-
-    .sidebar .profile_content{
-        position: absolute;
-        color: #fff;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .sidebar .profile_content .profile{
-        position: relative;
-        padding: 10px 6px;
-        height: 60px;
-    }
-
-    .profile_content .profile .profile_details{
-        display: flex;
-        align-items: center;
-    }
-
-    .profile .profile_details img {
-        height: 45px;
-        width: 45px;
-        object-fit: cover;
-        border-radius: 12px;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 
-    .profile .profile_details .name_job{
-        margin-left: 10px;
-    }
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
 
-    .profile .profile_details .name{
-        font-size: 15px;
-        font-weight: 400;
-    }
-    
-    .profile .profile_details .job{
-        font-size: 12px;
-    }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    padding: 6px 14px;
+    float: left;
+    background: #11101d;
+}
 
-    .profile #log-out{
-        position: absolute;
-        left: 88%;
-        bottom: 5px;
-        transform: translateX(-50%);
-        min-width: 50%;
-        line-height: 50px;
-        font-size: 20px;
-        border-radius: 12px;
-    }
+.nav_list{
+    margin-top: 15px;
+}
 
-      .secao {
-        position: relative;
-      }
-    
-    #secao-01 {
-        background-color: #EDE9D5;
-        background-image: C:\Users\bruno\Documents\ProjetoPessoal\background-image.jpg;
-    }
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
 
-    #secao-02 {
-        background-color: #E7AB9A;
-    }
+.logo_content .logo{
+    font-size: 28px;
+    margin-right: 5px;
+}
 
-    #secao-03 {
-        background-color: #DF7857;
-    }
+.logo_content .logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+}
 
-    #secao-04 {
-        background-color: #617143;
-    }
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    transform: translateX(-50%);
+}
 
-    .icone-scroll {
-        position: absolute;
-        bottom: 3em;
-        width: 50px;
-        height: 50px;
-        background-color: #1a1a1a;
-        border-radius: 50%;
-        left: 50%;
-        margin-left: -25px;
-        cursor: pointer;
-      }
-      .scroll {
-        width: 15px;
-        height: 15px;
-        border-right: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-        display: inline-block;
-        position: relative;
-      }
-      .scroll-next {
-        transform: rotate(45deg);
-        margin: 14px 0 0 16.5px;
-      }
-      .scroll-top {
-        transform: rotate(225deg);
-        margin: 19px 0 0 17px;
-      }
-      .scroll-top + .scroll-top {
-        top: -15px;
-        margin-top: 0;
-      }
+.sidebar ul{
+    margin-top: 20px;
+}
 
-      nav ul ul {
-        display: none;
-    }
-    nav ul li:hover > ul {
-        display: block;
-    }
-    nav{
-        margin: 0 auto;
-        text-align: center;
-        background-color: #EDE9D5;
-    }
- 
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 12px;
+}
 
-    #title-01-secao-01 {
-        font-family:Marker Felt, fantasy, 'Courier New', Courier, monospace;
-        font-size:xx-large;
-        font-style: italic;
-        position:absolute;
-        top: 50%;
-        left:60%;
-        transform: translate(-50%, -60%);
-    }
+.sidebar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
 
-    #title-02-secao-01 {
-        font-family: Comic Sans MS, Comic Sans, cursive;
-        font-size: larger;
-        position:absolute;
-        top: 50%;
-        left:60%;
-        transform: translate(-50%, -60%);
-    }
+.sidebar ul li .bx-search-alt{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+}
 
-    #title-03-secao-01 {
-        font-family: Comic Sans MS, Comic Sans, cursive;
-        font-size: larger;
-        position:absolute;
-        top: 50%;
-        left:60%;
-        transform: translate(-50%, -60%);
-    }
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
 
-    
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile_details img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile .profile_details .job{
+    font-size: 12px;
+}
+
+.profile #log-out{
+    position: absolute;
+    left: 88%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+  .secao {
+    position: relative;
+  }
+
+#secao-01 {
+    background-color: #EDE9D5;
+    background-image: C:\Users\bruno\Documents\ProjetoPessoal\background-image.jpg;
+}
+
+#secao-02 {
+    background-color: #E7AB9A;
+}
+
+#secao-03 {
+    background-color: #DF7857;
+}
+
+#secao-04 {
+    background-color: #617143;
+}
+
+#secao-05 {
+    background-color: #384127;
+}
+
+.icone-scroll {
+    position: absolute;
+    bottom: 3em;
+    width: 50px;
+    height: 50px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+  .scroll {
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    position: relative;
+  }
+  .scroll-next {
+    transform: rotate(45deg);
+    margin: 14px 0 0 16.5px;
+  }
+  .scroll-top {
+    transform: rotate(225deg);
+    margin: 19px 0 0 17px;
+  }
+  .scroll-top + .scroll-top {
+    top: -15px;
+    margin-top: 0;
+  }
+
+  nav ul ul {
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #EDE9D5;
+}
+
+
+#title-01-secao-01 {
+    font-family:Marker Felt, fantasy, 'Courier New', Courier, monospace;
+    font-size:xx-large;
+    font-style: italic;
+    position:absolute;
+    top: 50%;
+    left:60%;
+    transform: translate(-50%, -60%);
+}
+
+#title-01-secao-02 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: larger;
+    position:absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -60%)
+}
+
+#title-01-secao-03 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: larger;
+    position:absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -60%);
+}
+
+#title-01-secao-04 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: larger;
+    position:absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -60%);
+}
+
+#title-01-secao-05 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: larger;
+    position:absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -60%);
+}
