@@ -281,3 +281,11 @@ nav{
     left:50%;
     transform: translate(-50%, -60%);
 }
+
+#text-01 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size:medium;
+    text-align: center;
+    transform: translate(-1%, 70%);
+
+}
